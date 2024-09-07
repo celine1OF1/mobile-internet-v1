@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="./icons/webpage-logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/Store Locator.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>RBL Productions</title>
+    <style>
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            justify-content: center;
+        }
+
+        th,
+        td {
+            border-left: 1px solid rgb(152, 146, 146);
+            padding: 8px;
+            text-align: center;
+        }
+
+        th:first-child,
+        td:first-child {
+            border-left: none;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+
+            th,
+            td {
+                font-size: 14px;
+                /* Adjust font size for smaller screens */
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            th,
+            td {
+                font-size: 12px;
+                /* Further adjust font size for even smaller screens */
+            }
+
+            table {
+                width: 90%;
+                /* Adjust table width for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo-container">
+            <a href="Home.html">
+                <img src="./icons/logo.png" style="vertical-align: middle; width:300px; margin-top: 30px;"
+                    alt="webpage logo" />
+            </a>
+        </div>
+
+        <div class="navbar-menu-items">
+            <ul class="menu-items">
+                <!-- <li class="nav__el"><a class="test" href="TopUp.html"><b>Top Up</b></a></li> -->
+                <li class="nav__el"><a class="test active focused" href="Store Locator.html"><b>Store Locator</b></a>
+                </li>
+                <li class="nav__el"><a class="test" href="Shop.html"><b>Shop</b></a></li>
+                <li class="nav__el"><a class="test" href="Current Promotions.html"><b>Current Promotions</b></a></li>
+                <li class="nav__el"><a class="test" href="Important Notices.html"><b>Important Notices</b></a></li>
+                <li class="nav__el"><a class="test" href="Data Usage Estimator.html"><b>Data Usage Estimator</b></a>
+                </li>
+                <li class="nav__el">
+                    <a class="test" href="Contact Us.html"><b>Contact Us</b></a>
+                </li>
+                <li class="nav__el">
+                    <a class="test1" href="Cart Items.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" id="top-page-btn">
+        <img src="./icons/upward-arrow.png" alt="Scroll to Top">
+    </a>
+    <h1 style="text-align: center;">Store Locations</h1>
+    <div class="container">
+        <table class="location">
+            <thead>
+                <tr>
+                    <th>Flag/Country
+                        <hr style="color: rgb(152, 146, 146); border: 1px solid; margin-top: 40px;">
+                    </th>
+                    <th>Location
+                        <hr style="color: rgb(152, 146, 146); border: 1px solid; margin-top: 40px;">
+                    </th>
+                    <th>Address
+                        <hr style="color: rgb(152, 146, 146); border: 1px solid; margin-top: 40px;">
+                    </th>
+                    <th>Map
+                        <hr style="color: rgb(152, 146, 146); border: 1px solid; margin-top: 40px;">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./images/jamaica.png" width="300px"></td>
+                    <td>
+                        <img src="./images/biscomall.jpeg" alt="store map"><br>
+                        Shop # 32 Saint James Street, Montego Bay, Saint James
+                    </td>
+                    <td>Montego Bay, Saint James, Jamaica</td>
+                    <td>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1982569977145!2d-77.9254081261419!3d18.474676770577208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eda2a797b8b1c41
+    %3A0x6ee89777a5b3d77a!2s32%20St%20James%20St%2C%20Montego%20Bay%2C%20Jamaica!5e0!3m2!1sen!2s!4v1712711918499!5m2!1sen!2s"
+                            style="border-radius: 10px; border: none transparent;" width="100%" height="300"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <br><a
+                            href="https://www.google.com/maps?ll=18.474672,-77.922833&z=16&t=m&hl=en&gl=US&mapclient=embed&q=32+St+James+St+Montego+Bay+Jamaica"
+                            target="_blank" class="button">View on Google Maps</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="./images/st.lucia.jpg" width="300px"></td>
+                    <td>
+                        <img src="./images/baywalk.jpeg" alt="store map"><br>
+                        Shop # 5 Baywalk Mall Rodney Bay Gros
+                    </td>
+                    <td>P.O. Box BW 300,
+                        Rodney Bay
+                        Gros Islet, LC01 601</td>
+                    <td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30961.228011727344!2d-60.98462800209916!3d14.068111410171204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c40682071ab52e
+    f%3A0x2d3c9078c10ab9cd!2sBaywalk%20Shopping%20Mall!5e0!3m2!1sen!2s!4v1712712455440!5m2!1sen!2s"
+                            style="border-radius: 10px; border: none transparent;" width="100%" height="300"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-ref
+                errer-when-downgrade"></iframe>
+                        <br><a href="https://www.google.com/maps/@14.068111,-60.984628,13z?hl=en&entry=ttu"
+                            target="_blank" class="button">View on Google Maps</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./images/barbados.jpg" width="300px"></td>
+                    <td>
+                        <img src="./images/DomesMall.jpeg" alt="store map"><br>
+                        Shop # 121 Dome Mall Warrens
+                    </td>
+                    <td>Warrens, St. Michael BB22026</td>
+                    <td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.3362208317094!2d-59.6098279262651!3d13.141179411140396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f12122370afb%3A0x3
+    434902c702f9466!2sWarrens%20Dome%20Mall!5e0!3m2!1sen!2s!4v1712712680994!5m2!1sen!2s"
+                            style="border-radius: 10px; border: none transparent;" width="100%" height="300"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgra
+                de"></iframe>
+                        <br><a
+                            href="https://www.google.com/maps?ll=13.141179,-59.609828&z=16&t=m&hl=en&gl=US&mapclient=embed"
+                            target="_blank" class="button">View on Google Maps</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="./js/Home.js"></script>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="icon" href="./icons/webpage-logo.png" type="image/png">
+  <link rel="stylesheet" href="./css/Data Usage Estimator.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <title>RBL Productions</title>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navbar-logo-container">
+      <a href="Home.html">
+        <img src="./icons/logo.png" style="vertical-align: middle; width:300px; margin-top: 30px;" alt="webpage logo" />
+      </a>
+    </div>
+
+    <div class="navbar-menu-items">
+      <ul class="menu-items">
+        <!-- <li class="nav__el"><a class="test" href="TopUp.html"><b>Top Up</b></a></li> -->
+        <li class="nav__el"><a class="test" href="Store Locator.html"><b>Store Locator</b></a></li>
+        <li class="nav__el"><a class="test" href="Shop.html"><b>Shop</b></a></li>
+        <li class="nav__el"><a class="test" href="Current Promotions.html"><b>Current Promotions</b></a></li>
+        <li class="nav__el"><a class="test" href="Important Notices.html"><b>Important Notices</b></a></li>
+        <li class="nav__el"><a class="test active focused" href="Data Usage Estimator.html"><b>Data Usage
+              Estimator</b></a>
+        </li>
+        <li class="nav__el">
+          <a class="test" href="Contact Us.html"><b>Contact Us</b></a>
+        </li>
+        <li class="nav__el">
+          <a class="test1" href="Cart Items.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="login-box">
+    <h2>
+      <span style="color: red;">&#42;</span> Use The form below as a guide to determine which plan best suits you
+    </h2>
+
+
+    <h3>
+      What's the main source of video? YouTube or non-Youtube
+      site(s)/app(s)?
+    </h3>
+    <input type="radio" name="main-source" value="youtube" />
+    <b><span class="checkmark">Youtube</span></b>
+
+    <input type="radio" name="main-source" value="non-youtube" />
+    <b><span class="checkmark">Non-Youtube (eg. Netflix or other third party streaming services)</span></b>
+
+    <div>
+      <hr>
+      <h3>How many hours of non-Youtube video will you stream?</h3>
+      <input type="radio" name="stream" id="btn" value="upto4hrs" />
+      <b><span class="checkmark">Up to 4 hours daily</span></b><br />
+      <input type="radio" name="stream" id="btn" value="morethan4hrs" />
+      <b><span class="checkmark">More than 4 hours daily</span></b><br />
+      <input type="radio" name="stream" id="btn" value="30hrsweekly" />
+      <b><span class="checkmark">Up to 30 hours weekly</span></b><br />
+      <input type="radio" name="stream" id="btn" value="10hrsmonthly" />
+      <b><span class="checkmark">Up to 10 hours monthly</span></b><br />
+    </div>
+    <br />
+    <input type="button" class="button" value="Submit" onclick="submitForm()" />
+    </form>
+  </div>
+</body>
+
+
+<script>
+  function printByteBoost() {
+    alert("Based on your source of video and estimated length of time that you intend to watch HD videos, the Byte Boost plan is better for you.");
+  }
+
+  function printDataDynamo() {
+
+    alert("Based on your source of video and estimated length of time that you intend to watch HD videos, the Data Dynamo plan is better for you.");
+
+  }
+
+  function submitForm() {
+    let mainSource, duration;
+    mainSource = document.querySelector('input[name="main-source"]:checked');
+    duration = document.querySelector('input[name="stream"]:checked');
+    console.log("Source: ", mainSource.value);
+    console.log("Duration: ", duration.value);
+    if (mainSource.value == "youtube" && duration.value == "10hrsmonthly") {
+      printDataDynamo();
+    }
+    else {
+      printByteBoost();
+    }
+
+  }
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+.card {
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    width: fit-content;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.9);
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-top: 0;
+    padding-bottom: 25px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.card li strong {
+    font-weight: bold;
+}

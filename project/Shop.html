@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="./icons/webpage-logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/Shop.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>RBL Productions</title>
+</head>
+<script>
+    function toggleText(id) {
+        var cartButton = document.getElementById(`cartButton-${id}`);
+        var addedToCart = document.getElementById(`addedToCart-${id}`);
+
+        if (cartButton.style.display === "none") {
+            cartButton.style.display = "inline";
+            addedToCart.style.display = "none";
+        } else {
+            cartButton.style.display = "none";
+            addedToCart.style.display = "inline";
+        }
+    }
+
+
+    // function toggleAndAddToCart() {
+    //     toggleText(1); // Call toggleText function
+    //     addToCart(1); // Call addToCart function with argument 1
+    // }
+
+    function toggleAndAddToCart(id) {
+        toggleText(id); // Call toggleText function
+        addToCart(id); // Call addToCart function with argument 1
+    }
+</script>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo-container">
+            <a href="Home.html">
+                <img src="./icons/logo.png" style="vertical-align: middle; width:300px; margin-top: 30px;"
+                    alt="webpage logo" />
+            </a>
+        </div>
+
+        <div class="navbar-menu-items">
+            <ul class="menu-items">
+                <!-- <li class="nav__el"><a class="test" href="TopUp.html"><b>Top Up</b></a></li> -->
+                <li class="nav__el"><a class="test" href="Store Locator.html"><b>Store Locator</b></a></li>
+                <li class="nav__el"><a class="test active focused" href="Shop.html"><b>Shop</b></a></li>
+                <li class="nav__el"><a class="test" href="Current Promotions.html"><b>Current Promotions</b></a></li>
+                <li class="nav__el"><a class="test" href="Important Notices.html"><b>Important Notices</b></a></li>
+                <li class="nav__el"><a class="test" href="Data Usage Estimator.html"><b>Data Usage Estimator</b></a>
+                </li>
+                <li class="nav__el">
+                    <a class="test" href="Contact Us.html"><b>Contact Us</b></a>
+                </li>
+                <li class="nav__el">
+                    <a class="test1" href="Cart Items.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to the shop</h1>
+                <p>Explore our detailed data plans & Devices</p>
+                <a href="Shop.html#skip" class="btn">Featured Plans</a>
+                <a href="Shop.html#skip1" class="btn">Hotspot Devices</a>
+            </div>
+        </section>
+        <div class="line"></div>
+        <div style="text-align: center; margin-top: -20px; margin-bottom: 30px;">
+            <b style="color: black; font-size: 30px;" class="featured-plans-heading" id="skip">Featured Plans</b>
+        </div>
+
+        <div class="wrapper">
+            <div class="outer">
+                <div class="content">
+                    <span class="bg1">EXCLUSIVE</span>
+                    <div class="card-op">
+                        <h1>DATA DYNAMO <br />Data Plan </h1>
+                        <p>Experience uninterrupted YouTube enjoyment with our data plan, empowering you to binge-watch
+                            your
+                            favorite videos, anytime, anywhere for 28 days.</p>
+                    </div>
+                    <!-- <div class="button" onclick="toggleAndAddToCart(1)">
+                        <a class="cartButton" id="cartButton-1">$20 USD | <i class="fa-solid fa-cart-shopping"></i> ADD
+                            TO CART</a>
+                        <a id="addedToCart-1" style="display:none;">Added to Cart!</a>
+                    </div> -->
+
+                </div>
+                <img class="shop-img" src="./images/DataDynamoSummary.jpeg" height="101%" width="100%">
+            </div>
+
+            <div class="outer">
+                <div class="content">
+                    <span class="bg">EXCLUSIVE</span>
+                    <div class="card-op">
+                        <h1>BYTE BOOST <br />Data Plan </h1>
+                        <p>Experience unrivaled connectivity with our data plan, offering a staggering 3 times more
+                            any-use
+                            data than our data dynamo plan ensuring you can do more, stream more, and achieve more
+                            without
+                            worrying about data limits for 28 days.</p>
+                    </div>
+                    <!-- <div class="button" onclick="toggleAndAddToCart(2)">
+                        <a class="cartButton" id="cartButton-2">$20 USD | <i class="fa-solid fa-cart-shopping"></i> ADD
+                            TO CART</a>
+                        <a id="addedToCart-2" style="display:none;">Added to Cart!</a>
+                    </div> -->
+
+                </div>
+                <img class="shop-img" src="./images/WomanInfrontPhone.png" height="101%" width="100%">
+            </div>
+        </div>
+
+        <div class="line1"></div>
+        <div style="text-align: center;  margin-bottom: 30px;">
+            <b style="color: black; font-size: 30px;" class="featured-plans-heading" id="skip1">Hotspot Devices</b>
+        </div>
+
+        <div class="wrapper">
+            <div class="outer">
+                <div class="content">
+                    <span class="bg1">EXCLUSIVE</span>
+                    <div class="card-op">
+                        <h1>Alcatel Linkzone 2 Wi-Fi 4g LTE Hotspot</h1>
+                        <p>Carry this touchscreen, portable hotspot device on-the-go for over 2 days from a full charge.
+                        </p>
+                    </div>
+                    <!-- <div class="button1" onclick="addToCart(3)"> -->
+                    <div class="button1" onclick="toggleAndAddToCart(3)">
+                        <a id="cartButton-3">$39.98 USD | <i class="fa-solid fa-cart-shopping"></i>
+                            ADD TO CART
+                        </a>
+                        <a id="addedToCart-3" style="display:none;">Added to Cart!</a>
+                    </div>
+
+                </div>
+                <img class="shop-img" src="./images/KuWFi.png" height="101%" width="100%">
+            </div>
+
+            <div class="outer">
+                <div class="content">
+                    <span class="bg1">EXCLUSIVE</span>
+                    <div class="card-op">
+                        <h1>KuWFi 4G LTE Unlocked <br /> Wi-Fi Hotspot Device </h1>
+                        <p>Carry this touchscreen, portable hotspot device on-the-go for over 2 days for up to 8 hours
+                            full charge.</p>
+                    </div>
+                    <!-- <div class="button1" onclick="addToCart(4)"> -->
+                    <div class="button1" onclick="toggleAndAddToCart(4)">
+                        <a id="cartButton-4">$49.98 USD | <i class="fa-solid fa-cart-shopping"></i>
+                            ADD TO CART
+                        </a>
+                        <a id="addedToCart-4" style="display:none;">Added to Cart!</a>
+                    </div>
+
+                </div>
+                <img class="shop-img" src="./images/linkzone2.png" height="101%" width="100%">
+            </div>
+        </div>
+    </div>
+    <a href=" #" id="top-page-btn">
+        <img src="./icons/upward-arrow.png" alt="Scroll to Top">
+    </a>
+</body>
+<script src="./js/Home.js"></script>
+<script src="./js/ShopScript.js"></script>
+<script>
+    window.onload = function () {
+        showPlans();
+    };
+
+    function openCart() {
+        // Get the products from local storage
+        let products = localStorage.getItem("products");
+
+        // Encode the products as a URL parameter
+        let encodedProducts = encodeURIComponent(products);
+
+        // Construct the URL of the cart page with the encoded products as a parameter
+        let cartPageURL = "Cart Items.html?products=" + encodedProducts;
+
+        // Redirect to the cart page
+        window.location.href = "Cart Items.html";
+
+    }
+</script>
+
+</html>

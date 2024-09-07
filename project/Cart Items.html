@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="./icons/webpage-logo.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/Important Notices.css">
+    <!-- <link rel="stylesheet" href="./css/Shop.css"> -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/Cart Items.css">
+    <title>RBL Productions</title>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo-container">
+            <a href="Home.html">
+                <img src="./icons/logo.png" style="vertical-align: middle; width:300px; margin-top: 30px;"
+                    alt="webpage logo" />
+            </a>
+        </div>
+
+        <div class="navbar-menu-items">
+            <ul class="menu-items">
+                <!-- <li class="nav__el"><a class="test" href="TopUp.html"><b>Top Up</b></a></li> -->
+                <li class="nav__el"><a class="test" href="Store Locator.html"><b>Store Locator</b></a></li>
+                <li class="nav__el"><a class="test" href="Shop.html"><b>Shop</b></a></li>
+                <li class="nav__el"><a class="test" href="Current Promotions.html"><b>Current Promotions</b></a></li>
+                <li class="nav__el"><a class="test" href="Important Notices.html"><b>Important Notices</b></a></li>
+                <li class="nav__el"><a class="test" href="Data Usage Estimator.html"><b>Data Usage Estimator</b></a>
+                </li>
+                <li class="nav__el">
+                    <a class="test" href="Contact Us.html"><b>Contact Us</b></a>
+                </li>
+                <li class="nav__el">
+                    <a class="test1" href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mobile-container">
+        <header>
+            <section class="hero-banner">
+                <div class="hero-image"></div>
+            </section>
+        </header>
+        <main>
+            <article class="text-info">
+                <h2>Cart Items</h2>
+            </article>
+        </main>
+    </div>
+
+    <div class="toast actives">
+
+        <div class="toast-content">
+            <i class="fa-regular fa-exclamation"></i>
+
+            <div class="message">
+                <span class="text text-1"><b>Cart Items</b></span>
+                <span class="text text-2"><b>Items you added!</b></span>
+            </div>
+        </div>
+        <div class="progress actives"></div>
+    </div>
+
+
+
+    <div id="product-container"></div>
+
+
+
+
+
+
+
+
+</body>
+
+<script src="./js/Important Notices.js"></script>
+<script src="./js/ShopScript.js"></script>
+<script>
+    window.onload = showPlans;
+</script>
+<!-- <script src="./js/Cart Items.js"></script> -->
+
+</html>
